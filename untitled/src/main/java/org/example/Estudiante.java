@@ -7,6 +7,21 @@ public class Estudiante extends Persona {
     private double promedio;
 
     // metodos
+    public Estudiante(double Id, String nombre, String apellido, String email, double codigo, Programa programa, boolean activo, double promedio) {
+        super(Id, nombre, apellido, email);
+        this.codigo = codigo;
+        this.programa = programa;
+        this.activo = activo;
+        this.promedio = promedio;
+    }
+    
+    public String toString() {
+        return "Código: " + getCodigo() + "\n" +
+                "Programa: " + Programa.toString() + "\n" +
+                "Activo: " + isActivo() + "\n" +
+                "Promedio: " + getPromedio() + "\n"+
+                super.toString() + "\n";
+    }
 
     public double getCodigo() {
         return codigo;

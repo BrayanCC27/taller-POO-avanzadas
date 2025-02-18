@@ -1,15 +1,26 @@
 package org.example;
 
 public class Profesor extends Persona {
-    private String TipoContacto;
+    private String tipoContrato;
 
     // metodos
 
-    public String getTipoContacto() {
-        return TipoContacto;
+
+    public Profesor(double Id, String nombre, String apellidos, String email,String tipoContrato) {
+        super(Id, nombre, apellidos, email);
+        this.tipoContrato = tipoContrato;
     }
 
-    public void setTipoContacto(String tipoContacto) {
-        TipoContacto = tipoContacto;
+    public String toString() {
+        return "Tipo de contrato: " + getTipoContrato() +"\n" +
+               super.toString();
+    }
+
+    public String getTipoContrato() {
+        return tipoContrato;
+    }
+
+    public void setTipoContrato(String tipoContrato) {
+        this.tipoContrato = tipoContrato;
     }
 }
