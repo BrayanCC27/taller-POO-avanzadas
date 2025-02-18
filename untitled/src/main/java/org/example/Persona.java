@@ -6,6 +6,13 @@ public class Persona {
     private String apellidos;
     private String email;
 
+    public Persona(double ID, String nombres, String email, String apellidos) {
+        this.ID = ID;
+        this.nombres = nombres;
+        this.email = email;
+        this.apellidos = apellidos;
+    }
+
     public double getID() {
         return ID;
     }
@@ -36,5 +43,12 @@ public class Persona {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String toString(){
+        return "ID :"+getID()+"\n"+
+                "Nombres :"+getNombres()+"\n"+
+                "Apellidos :"+getApellidos()+"\n"+
+                "Email :"+getEmail()+"\n";
     }
 }
