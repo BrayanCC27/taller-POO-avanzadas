@@ -60,6 +60,6 @@ public class Programa {
                 "Nombre :"+getNombre()+"\n"+
                 "Duracion :"+getDuracion()+"\n"+
                 "Registro :"+getRegistro()+"\n"+
-                "Facultad :"Facultad.toString()"\n";
+                "Facultad :"+Facultad.toString()+"\n";
     }
 }
