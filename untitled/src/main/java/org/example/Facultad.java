@@ -13,10 +13,11 @@ public class Facultad {
         this.decano = decano;
     }
 
+    @Override
     public String toString() {
         return "ID: " +getId()+ "\n"+
                 "Nombre: " +getNombre()+ "\n"+
-                "Decano: " +Persona.toString();
+                "Decano: " +decano.toString();
     }
 
     public double getId() {

@@ -35,9 +35,10 @@ public class Curso {
         this.activo = activo;
     }
 
+    @Override
     public String toString(){
         return "ID :"+getID()+"\n"+
-                "Programa :"+Programa.toString()+"\n"+
+                "Programa :"+programa.toString()+"\n"+
                 "Activo :"+isActivo()+"\n";
     }
 }

@@ -11,6 +11,7 @@ public class Profesor extends Persona {
         this.tipoContrato = tipoContrato;
     }
 
+    @Override
     public String toString() {
         return "Tipo de contrato: " + getTipoContrato() +"\n" +
                super.toString();

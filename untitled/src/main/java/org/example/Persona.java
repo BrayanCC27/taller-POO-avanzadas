@@ -45,6 +45,7 @@ public class Persona {
         this.email = email;
     }
 
+    @Override
     public String toString(){
         return "ID :"+getID()+"\n"+
                 "Nombres :"+getNombres()+"\n"+

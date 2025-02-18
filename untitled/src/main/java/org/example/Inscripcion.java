@@ -15,11 +15,12 @@ public class Inscripcion {
         this.estudiante = estudiante;
     }
 
+    @Override
     public String toString() {
-        return "Curso: " +Curso.toString()+ "\n"+
+        return "Curso: " +curso.toString()+ "\n"+
                 "Año: " +getAnio()+ "\n"+
                 "Semestre: " +getSemestre()+ "\n"+
-                "Estudiante: " +Estudiante.toString();
+                "Estudiante: " +estudiante.toString();
     }
 
     public Curso getCurso() {

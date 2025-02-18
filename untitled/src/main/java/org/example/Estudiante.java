@@ -14,10 +14,11 @@ public class Estudiante extends Persona {
         this.activo = activo;
         this.promedio = promedio;
     }
-    
+
+    @Override
     public String toString() {
         return "Código: " + getCodigo() + "\n" +
-                "Programa: " + Programa.toString() + "\n" +
+                "Programa: " + programa.toString() + "\n" +
                 "Activo: " + isActivo() + "\n" +
                 "Promedio: " + getPromedio() + "\n"+
                 super.toString() + "\n";

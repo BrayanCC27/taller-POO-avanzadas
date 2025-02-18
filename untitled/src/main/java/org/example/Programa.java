@@ -55,11 +55,12 @@ public class Programa {
         this.duracion = duracion;
     }
 
+    @Override
     public String toString(){
         return "ID :"+getID()+"\n"+
                 "Nombre :"+getNombre()+"\n"+
                 "Duracion :"+getDuracion()+"\n"+
                 "Registro :"+getRegistro()+"\n"+
-                "Facultad :"+Facultad.toString()+"\n";
+                "Facultad :"+facultad.toString()+"\n";
     }
 }
